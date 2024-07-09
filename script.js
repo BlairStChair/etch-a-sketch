@@ -5,4 +5,9 @@ for(var i = 0; i < 256; i++){
     newDiv.id = "div" + i;
     newDiv.className = "newDivClass";
     container.appendChild(newDiv);
+
+    newDiv.addEventListener("mouseover", () => {
+        newDiv.style.backgroundColor = "green";
+    });
 }
+
