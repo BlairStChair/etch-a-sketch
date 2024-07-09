@@ -29,19 +29,11 @@ body, html{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    border-style: solid;
+    border-color: black;
 }
 
 .newDivClass{
-    /*width: calc(100% / 18); */
-    flex: 0 0 5.5%;
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
+    flex: 0 0 calc(100% / 16);
 }
 
-.customDivClass{
-    /*flex: 0 0 calc(100% / 7); */
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-}

@@ -16,19 +16,18 @@ newGridBtn.addEventListener("click", () => {
     const gridSize = prompt("Choose a size of your canvas (maximum size is 100x100)");
 
     document.querySelectorAll(".newDivClass").forEach(newDiv => newDiv.remove());
+    document.querySelectorAll(".customDivClass").forEach(customDiv => customDiv.remove());
 
     for(var i = 0; i < gridSize*gridSize; i++){
         const customDiv = document.createElement("div");
         customDiv.id = "div" + i;
         customDiv.className = "customDivClass";
-        customDiv.style.flex = `0 0 calc(100% / (${gridSize} + 1))`;
+        customDiv.style.flex = `0 0 calc(100% / ${gridSize} )`;
         container.appendChild(customDiv);
     
         customDiv.addEventListener("mouseover", () => {
             customDiv.style.backgroundColor = "green";
-            
         });
     }
-    
 });
 
