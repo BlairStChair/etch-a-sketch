@@ -9,6 +9,13 @@ body, html{
 #title{
     display: flex;
     justify-content: center;
+    gap: 20px;
+}
+
+#newGridBtn{
+    height: 22px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #gameContainer{
