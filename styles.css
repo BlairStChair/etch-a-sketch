@@ -1,0 +1,31 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+}
+
+#gameContainer{
+    display: flex;
+    justify-content: center;
+}
+
+#container{
+    width: 64vh;
+    height: 64vh;
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newDivClass{
+    width: 4vh;
+    height: 4vh;
+    background-color: aqua;
+}
