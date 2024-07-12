@@ -4,23 +4,60 @@ body, html{
     padding: 0;
     display: flex;
     flex-direction: column;
+    background-color: #e6d7f1;
+    font-family: "Playwrite DK Uloopet", cursive;
+}
+
+#up{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10vw;
+}
+
+#leftPanel{
+    background-image: url(backcat.jpeg);
+    background-size: contain;
+    height: 100%;
+    width: 24.15vw;
 }
 
 #title{
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-evenly;
+    gap: 10px; 
+    color: #675372;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: column;
 }
 
 #newGridBtn{
     height: 22px;
     margin-top: auto;
     margin-bottom: auto;
+    border-style: none;
+    border-radius: 5px;
+    font-family: "Playwrite DK Uloopet", cursive;
+    color: white;
+    background-color: #675372;
+    height: 2vw;
+    width: 12vw;
+    font-size: 0.75vw;
+}
+
+#newGridBtn:hover{
+    color: #675372;
+    background-color: white;
 }
 
 #gameContainer{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: first baseline;
 }
 
 #container{
@@ -30,11 +67,34 @@ body, html{
     flex-wrap: wrap;
     flex-direction: column;
     border-style: solid;
-    border-color: black;
+    background-color: white;
+    border-color: #675372;
     border-radius: 5px;
 }
 
 .newDivClass{
     flex: 0 0 calc(100% / 16);
+}
+
+#rightPanel{
+    background-image: url(backcat.jpeg);
+    background-size: contain;
+    height: 100%;
+    width: 24.15vw;
+}
+
+#footer{
+    color: white;
+    background-color: #675372;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color:#F0A67B;
 }
 

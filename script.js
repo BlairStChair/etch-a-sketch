@@ -1,5 +1,6 @@
 const container = document.querySelector("#container");
 const newGridBtn = document.querySelector("#newGridBtn");
+const rainbowBtn = document.querySelector("#rainbowBtn");
 
 for(var i = 0; i < 256; i++){
     const newDiv = document.createElement("div");
@@ -8,7 +9,7 @@ for(var i = 0; i < 256; i++){
     container.appendChild(newDiv);
 
     newDiv.addEventListener("mouseover", () => {
-        newDiv.style.backgroundColor = "green";
+        newDiv.style.backgroundColor = "#F7D7D7";
     });
 }
 
@@ -26,8 +27,10 @@ newGridBtn.addEventListener("click", () => {
         container.appendChild(customDiv);
     
         customDiv.addEventListener("mouseover", () => {
-            customDiv.style.backgroundColor = "green";
+            customDiv.style.backgroundColor = "#F7D7D7";
         });
     }
 });
+
+
 
